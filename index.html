@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)https://chatsagnik.github.io/QISE/#home -->
+<!-- saved from url=(0039)https://acm-goa.github.io/QISE/#home -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,14 @@
     <div class="outside__container">
           <nav class="navbar">
             <div class="navbar__logo">
-              <a href="https://chatsagnik.github.io/QISE/#home" class="navbar__logo__text">QISE 2021</a>
+              <a href="https://acm-goa.github.io/QISE/#home" class="navbar__logo__text">QISE 2021</a>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item"><a href="https://chatsagnik.github.io/QISE/#home" class="navbar__links">Info</a></li>
-                <li class="navbar__item"><a href="https://chatsagnik.github.io/QISE/#info" class="navbar__links">Description</a></li>
-                <li class="navbar__item"><a href="https://chatsagnik.github.io/QISE/#schedule" class="navbar__links">Schedule</a></li>
-                <li class="navbar__item"><a href="https://chatsagnik.github.io/QISE/#posters" class="navbar__links">Call for Posters</a></li>
-                <li class="navbar__item"><a href="https://chatsagnik.github.io/QISE/#about" class="navbar__links">About Us</a></li>
+                <li class="navbar__item"><a href="https://acm-goa.github.io/QISE/#home" class="navbar__links">Info</a></li>
+                <li class="navbar__item"><a href="https://acm-goa.github.io/QISE/#info" class="navbar__links">Description</a></li>
+                <li class="navbar__item"><a href="https://acm-goa.github.io/QISE/#schedule" class="navbar__links">Schedule</a></li>
+                <li class="navbar__item"><a href="https://acm-goa.github.io/QISE/#posters" class="navbar__links">Call for Posters</a></li>
+                <li class="navbar__item"><a href="https://acm-goa.github.io/QISE/#about" class="navbar__links">About Us</a></li>
                 <!-- <li  class="navbar__item"><a href="#about" class="navbar__links">Contact Us</a></li> -->
               </ul>
               <img src="./QISE_ Quantum Information Science and Engineering_files/acm_goa.png" alt="ACM Goa logo" class="navbar__image">
@@ -149,7 +149,7 @@
   setLoginToken(t) { return this._call('setLoginToken', [t]); },
   _call(methodName, methodArgs) {
     const id = Math.random();
-    window.postMessage({ id, token: '0.30830891417113615', methodName, methodArgs }, 'https://chatsagnik.github.io');
+    window.postMessage({ id, token: '0.30830891417113615', methodName, methodArgs }, 'https://acm-goa.github.io');
     return new Promise(resolve => {
       const listener = window.addEventListener('message', event => {
         const data = event.data;
