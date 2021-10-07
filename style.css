@@ -1,0 +1,220 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+  /*overflow: hidden;*/
+}
+ .outside__container{
+  width: 100%;
+  height: 100%;
+  /*overflow-y: scroll;*/
+  display: flex;
+  position: relative;
+  flex-direction: column;
+ }
+
+.navbar{
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+}
+
+.navbar__logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-weight: 700;
+  color: #009879;
+  font-size: 2em;
+  padding-top: 40px;
+  padding-left: 10px;
+  transition: 0.6s;
+}
+
+.navbar__logo__text{
+  padding-left: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.navbar__logo a:hover{
+  color: #009879;
+  font-weight: bold;
+  font-size: 1.06em;
+}
+
+ .navbar__menu{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  align-items: baseline;
+  /*padding: 30px 10%;*/
+ }
+ .navbar__item{
+  position: relative;
+  list-style: none;
+  padding-top: 40px;
+  font-size: 1.2em;
+  /*font-weight: bold;*/
+ }
+
+
+ .navbar__links{
+  position: relative;
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+ }
+
+ .navbar__links:hover{
+  color: #009879;
+  font-weight: bold;
+  font-size: 1.06em;
+ }
+
+.navbar__image{
+  position: relative;
+  display: flex;
+  width: auto;
+  height:100px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.text__container{
+  /*position: fixed;*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  padding: 0px 60px;
+}
+
+.main__container{
+  /*padding-top: 80px;*/
+}
+.info__container, .main__container,
+.schedule__container, .poster__container,
+.about__container{
+  /*padding-top: 40px;*/
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  margin: 0 auto;
+  /*height: 90%;*/
+  scroll-snap-align: center;
+}
+.about__container{
+  padding-bottom: 100px;
+}
+
+.schedule__table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9 em;
+  min-width: 400 px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.schedule__table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.schedule__table th, .schedule__table td{
+  padding: 12px 20px;
+}
+.schedule__table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.schedule__table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.schedule__table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.main__header, .info__header, .schedule__header,
+.poster__header, .about__header {
+  font-family: "Montserrat", sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #009879;
+}
+
+#main__emp{
+  font-weight: bold;
+  white-space:nowrap;
+  color: #71716b;
+}
+
+#poster__emp{
+  font-weight: bold;
+  color: #71716b;
+  white-space:nowrap;
+}
+
+.about__list{
+  margin: 25px 0;
+}
+
+.about__list #about__emp:hover{
+  transform: scale(1.02);
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.about__list #about__emp:hover > #main__emp{
+  transform: scale(1.02);
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+footer{
+    /*position: relative;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #009879;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-bottom{
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+/*a {color:#40027d;}
+a:visited {color:#40027d;}*/
