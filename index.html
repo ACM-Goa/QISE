@@ -21,6 +21,7 @@
                 <li  class="navbar__item"><a href="#home" class="navbar__links">Info</a></li>
                 <li  class="navbar__item"><a href="#reg" class="navbar__links">Registration</a></li>
                 <li  class="navbar__item"><a href="#info" class="navbar__links">Description</a></li>
+                <li  class="navbar__item"><a href="#invtalk" class="navbar__links">Invited Talks</a></li>
                 <li  class="navbar__item"><a href="#schedule" class="navbar__links">Schedule</a></li>
                 <li  class="navbar__item"><a href="#posters" class="navbar__links">Call for Posters</a></li>
                 <li  class="navbar__item"><a href="#about" class="navbar__links">About Us</a></li>
@@ -67,6 +68,22 @@
                   </p>
                 </div>
             </div>
+            <div class="schedule" id="invtalk">
+              <div class="info__container">
+              <h1 class="schedule__header"> Invited Talks </h1>
+                <h3 class="schedule__header">A Quantum Wave in Computing - Dr. Umesh Vazirani</h3>
+                <p class="info__desc">
+                  Recent advances in experimental quantum computing are propelling us towards the era of small to medium scale quantum computers. But quantum computation also forces us to reimagine our entire conception of computation, with major implications for both computer science and physics. In this talk I will discuss these conceptual changes while describing recent breakthroughs in the design of protocols for the testing and benchmarking of quantum computers, a task that has deep computational and philosophical implications. I will describe how this leads to protocols for scalable and verifiable quantum supremacy, certifiable quantum random generation and verification of quantum computation.
+                </p>
+                <h3 class="schedule__header">Quantum fine-grained complexity - Dr. Harry Burhman</h3>
+                <p class="info__desc">
+                  One of the major challenges in computer science is to establish lower bounds on the resources, usually time, that are needed to solve computational problems. This holds in particular for computational problems that appear in practise. <br>
+                  One way towards dealing with this situation is the study of fine-grained complexity where we use special reductions to prove time lower bounds for many diverse problems based on the conjectured hardness of some key problems. For example, computing the edit distance between two strings, a problem that has a practical interest when determining the genetic distance between species based on their DNA, has an algorithm that takes O(n^2) time. Using a fine-grained reduction it can be shown that faster algorithms for edit distance also imply a faster algorithm for the Boolean Satisfiability (SAT) problem (that is believed to not exist). This is evidence that the current edit distance algorithms are optimal. Another problem, besides SAT, that is used as a basis for these reductions is the 3SUM problem.<br>
+                  The situation in the quantum regime is no better; almost all known lower bounds for quantum algorithms are defined in terms of query complexity, which doesn’t help much for problems for which the best-known algorithms take super-linear time. Therefore, employing fine-grained reductions in the quantum setting seems a natural way forward. However, translating the classical fine-grained reductions directly into the quantum regime is not always possible for various reasons. In this talk, I will present some recent results in which we circumvent these challenges and prove quantum time lower bounds for some problems in BQP conditioned on the conjectured quantum hardness of SAT (and its variants) and the 3SUM problem.<br>
+                  This is based on joint work with Bruno Loff, Florian Speelman, and Subhasree Patro.
+                </p>
+              </div>
+            </div>
             <div class="schedule" id="schedule">
                 <div class="schedule__container">
                 <h1 class="schedule__header">Tentative Schedule</h1>
@@ -85,7 +102,7 @@
                       </tr>
                       <tr>
                         <td>09:30 am - 11:00 am IST</td>
-                        <td>Quantum algorithms and complexity theory</td>
+                        <td>A Quantum Wave in Computing</td>
                         <td>Dr. Umesh Vazirani</td>
                       </tr>
                       <tr>
@@ -119,7 +136,7 @@
                       </tr> -->
                       <tr>
                         <td>7:15 pm - 8:30 pm IST</td>
-                        <td>Quantum software</td>
+                        <td>Quantum fine-grained complexity</td>
                         <td>Dr. Harry Burhman</td>
                       </tr>
                       <tr>
